@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?san francisco');
+    background-size: cover;
+}
+
+.card {
+    background: #000000d0;
+    padding: 2em;
+    border-radius: 30px;
+    width: 70%;
+    max-width: 500px;
+    align-items: center;
+    color: white;
+}
+
+.search {
+    display: flex;
+    margin: 1em;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.search_bar {
+    border-radius: 19px;
+    height: 2em;
+    width: 80%;
+    padding: 0.5em;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: black;
+}
+
+.search_button {
+    margin: .5em;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    align-items: center;
+    padding: 0.5em;
+    background-color: white;
+    color: black;
+}
+
+.search_button:hover {
+    background-color: #5a5a5ac4;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.weather {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: ". b1 ." "b2_1 b2_2 b2_3";
+    font-size: 1.2em;
+}
+
+.city {
+    display: flex;
+    grid-area: b1;
+    justify-content: center;
+    grid-column: 1/4;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+}
+
+#date {
+    margin: 0.3em 0;
+}
+
+#wind_speed {
+    font-size: 0.8em;
+}
+
+.time_wind {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    grid-area: b2_1;
+    margin-top: 1.3em;
+}
+
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: b2_2;
+    margin-top: 1.3em;
+}
+
+#max_temp {
+    margin: 0.3em 0;
+}
+
+#description {
+    margin-bottom: 0.3em;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: b2_3;
+}
