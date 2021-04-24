@@ -4,7 +4,8 @@ const bdcApi = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 const Http = new XMLHttpRequest();
 
 let weather = {
-    apiKey: "0cedb1499e5a849209c2ae3baa311abb",
+    // Replace with your own api.
+    apiKey: "",
     fetchWeather: function(city) {
         fetch(
                 "http://api.openweathermap.org/data/2.5/weather?q=" +
